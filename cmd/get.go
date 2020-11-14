@@ -64,7 +64,7 @@ func get(re int) {
 		if strings.Index(rurl, "star") > -1 {
 			rurl += "/" + strconv.Itoa(curpage)
 		} else {
-			rurl += "/page/" + strconv.Itoa(curpage)
+			rurl += "/" + strconv.Itoa(curpage)
 		}
 	}
 	fmt.Printf("正在获取第%d页\n", curpage)
